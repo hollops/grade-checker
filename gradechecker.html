@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gradechecker.css" />
+  </head>
+  <body>
+    <header>
+      <p>GradeCheck</p>
+      <nav id="nav-btn" class="nav-btn">
+        <ul>
+          <li><a href="">History</a></li>
+          <li><a href="">settings</a></li>
+          <li><a href="">grade calculation</a></li>
+        </ul>
+      </nav>
+      <img id="menu-icon"
+        src="menu_24dp_000000_FILL1_wght300_GRAD0_opsz24.svg"
+        alt="menu icon"
+      />
+    </header>
+    <main>
+    <div class="hero">
+      <h1>Grade checker</h1>
+      <p>Check your score and grade instantly</p>
+    </div>
+    <div class="hero-1">
+      <label>Enter your score (0 – 100):</label>
+      <input
+        type="number"
+        id="scoreInput"
+        min="0"
+        max="100"
+        placeholder="e.g 72"
+      />
+      <br />
+      <button id="checkBtn">Check my Grade</button>
+    </div>
+    <div class="hero-2">
+      <div class="hero-2a">
+        <p>Last Checked</p>
+        <span>No history</span>
+      </div>
+      <div class="hero-2a">
+        <p>Class Avg</p>
+        <span>72.4%</span>
+      </div>
+    </div>
+
+    <div id="gradeResult"></div>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="end">
+        <span>calculator</span>
+        <span>history</span>
+        <span>setting</span>
+      </div>
+    </footer>
+
+    <script src="gradechecker.js"></script>
+  </body>
+</html>
