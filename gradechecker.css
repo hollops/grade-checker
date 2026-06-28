@@ -15,12 +15,16 @@ header {
   height: 60px;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 header p {
   font-size: 1.5rem;
   color: #1f52ee;
   font-weight: bold;
   padding-top: 10px;
+}
+#menu-icon {
+  width: 40px;
 }
 nav {
   display: none;
@@ -35,6 +39,13 @@ li {
 }
 main {
   margin-top: 100px;
+}
+.top {
+  display: flex;
+  gap: 0.7rem;
+  img {
+    width: 34px;
+  }
 }
 .hero {
   text-align: center;
@@ -72,13 +83,14 @@ input::placeholder {
 }
 .hero-1 button {
   background-color: #1f52ee;
-  padding: 10px;
-  width: 80%;
-  margin: 0px 0px 0px 35px;
+  padding: 10px 0px 10px 0px ;
+  margin: 0px 30px 0px 30px;
   color: white;
   font-size: 1.1rem;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 .hero-2 {
   display: grid;
@@ -93,7 +105,10 @@ input::placeholder {
   height: 100px;
   line-height: 1.5;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
+}
+.hero-2a img {
+  width: 30px;
 }
 footer {
   margin-top: 50px;
@@ -101,11 +116,19 @@ footer {
 }
 .end {
   display: flex;
-  height: 30px;
+  height: 40px;
   justify-content: space-between;
   margin: 10px 30px 0px 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.end-1 {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.end-1 img {
+  width: 20px;
 }
 #gradeResult {
   margin: 30px 10px 0px 10px;
@@ -126,6 +149,21 @@ footer {
   padding: 20px;
   font-weight: bold;
   text-transform: capitalize;
-
-  
+}
+@media (min-width: 1024px) {
+  #menu-icon {
+    display: none;
+  }
+  label,
+  input {
+    margin-left: 80px;
+  }
+  .hero-1 button {
+    display: flex;
+    justify-content: center;
+    margin: 0px 160px 0px 180px;
+    padding: 10px;
+    cursor: pointer;
+   
+  }
 }

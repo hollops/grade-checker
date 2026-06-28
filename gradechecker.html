@@ -8,7 +8,13 @@
   </head>
   <body>
     <header>
-      <p>GradeCheck</p>
+      <div class="top">
+        <img
+          src="/images/school_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg"
+          alt="school icon"
+        />
+        <p>GradeCheck</p>
+      </div>
       <nav id="nav-btn" class="nav-btn">
         <ul>
           <li><a href="">History</a></li>
@@ -16,48 +22,69 @@
           <li><a href="">grade calculation</a></li>
         </ul>
       </nav>
-      <img id="menu-icon"
-        src="menu_24dp_000000_FILL1_wght300_GRAD0_opsz24.svg"
+      <img
+        id="menu-icon"
+        src="/images/menu_24dp_000000_FILL1_wght300_GRAD0_opsz24.svg"
         alt="menu icon"
       />
     </header>
     <main>
-    <div class="hero">
-      <h1>Grade checker</h1>
-      <p>Check your score and grade instantly</p>
-    </div>
-    <div class="hero-1">
-      <label>Enter your score (0 – 100):</label>
-      <input
-        type="number"
-        id="scoreInput"
-        min="0"
-        max="100"
-        placeholder="e.g 72"
-      />
-      <br />
-      <button id="checkBtn">Check my Grade</button>
-    </div>
-    <div class="hero-2">
-      <div class="hero-2a">
-        <p>Last Checked</p>
-        <span>No history</span>
+      <div class="hero">
+        <h1>Grade checker</h1>
+        <p>Check your score and grade instantly</p>
       </div>
-      <div class="hero-2a">
-        <p>Class Avg</p>
-        <span>72.4%</span>
+      <div class="hero-1">
+        <label>Enter your score (0 – 100):</label>
+        <input
+          type="number"
+          id="scoreInput"
+          min="0"
+          max="100"
+          placeholder="e.g 72"
+        />
+        <br />
+        <button id="checkBtn">Check my Grade</button>
       </div>
-    </div>
+      <div class="hero-2">
+        <div class="hero-2a">
+          <img
+            src="/images/history_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg"
+            alt="history icon"
+          />
+          <p>Last Checked</p>
+          <span>No history</span>
+        </div>
+        <div class="hero-2a">
+          <img
+            src="/images/insert_chart_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg"
+            alt="chart icon"
+          />
+          <p>Class Avg</p>
+          <span>72.4%</span>
+        </div>
+      </div>
 
-    <div id="gradeResult"></div>
+      <div id="gradeResult"></div>
     </main>
 
     <footer>
       <hr />
       <div class="end">
-        <span>calculator</span>
-        <span>history</span>
-        <span>setting</span>
+        <div class="end-1">
+          <img
+            src="/images/calculate_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg"
+            alt="calculator icon"
+          />
+          <span>calculator</span>
+        </div>
+        <div  class="end-1">
+          <img src="/images/history_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg" alt="history icon">
+          <span>history</span>
+        </div>
+        <div  class="end-1">
+          <img src="/images/settings_39dp_0000F5_FILL0_wght400_GRAD0_opsz40.svg" alt="settings icon">
+          <span>setting</span>
+        </div>
       </div>
     </footer>
 
